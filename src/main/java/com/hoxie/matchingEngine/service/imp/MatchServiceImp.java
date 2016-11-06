@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -52,11 +53,17 @@ public class MatchServiceImp implements MatchService{
 	// match the proper job for worker
 	public List<Job> findJobList(Worker worker, List<Job> jobList){
 		List<Job> jobs = new LinkedList<>();
-		jobList.forEach(job->{
+/*		jobList.parallelStream().forEach(job->{
 			if(isMatchingJob(worker,job)){
 				jobs.add(job);
 			}	
 		});
+		*/
+		jobs= jobList.stream()
+				.filter(job->isMatchingJob(worker,job))
+				.limit(3)
+				.collect(Collectors.toList());
+		log.debug("***************jobs size is "+jobs.size());
 		return jobs;
 	}
 	
