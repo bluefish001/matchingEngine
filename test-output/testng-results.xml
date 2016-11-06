@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="218" started-at="2016-11-04T04:09:00Z" finished-at="2016-11-04T04:09:00Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="218" started-at="2016-11-04T04:09:00Z" finished-at="2016-11-04T04:09:00Z">
+      <class name="com.hoxie.matchingEngine.service.impl.WorkerServiceTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.hoxie.matchingEngine.service.impl.WorkerServiceTest@34ce8af7]" name="setUp" is-config="true" duration-ms="200" started-at="2016-11-04T15:09:00Z" finished-at="2016-11-04T15:09:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getWorkerByIdTest()[pri:0, instance:com.hoxie.matchingEngine.service.impl.WorkerServiceTest@34ce8af7]" name="getWorkerByIdTest" duration-ms="9" started-at="2016-11-04T15:09:00Z" finished-at="2016-11-04T15:09:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWorkerByIdTest -->
+      </class> <!-- com.hoxie.matchingEngine.service.impl.WorkerServiceTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
